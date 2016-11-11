@@ -13,3 +13,18 @@ function timerfunc() {
 }
 
 setInterval('timerfunc()', 1000);
+
+
+function getBiggerNumber() {
+    var firstNumber = parseInt(document.getElementById("first-tb").value);
+    var secondNumber = parseInt(document.getElementById("second-tb").value);
+
+    var TheBiggerNumber = secondNumber;
+
+    if (firstNumber>secondNumber){
+        TheBiggerNumber = firstNumber
+    }
+
+    var resultTB = document.getElementById("result-tb");
+    resultTB.value = "The biggest number is:" + TheBiggerNumber;
+}
